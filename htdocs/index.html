@@ -264,8 +264,35 @@
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Custom scripts for this template -->
-  <script src="js/grayscale.min.js"></script>
+  <script src="js/grayscale.js"></script>
   <script src="js/audio.js"></script>
+
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script>  
+    // YouTubeの埋め込み
+      function onYouTubeIframeAPIReady() {
+        ytPlayer = new YT.Player(
+          'masthead', // 埋め込む場所をIDで設定
+          {
+            videoId: 'Adut7kwNfSs', // YouTubeのIDを指定
+            playerVars: {
+                loop: 1,//0:ループしない 1:ループする 1の場合playlist設定必須
+                controls: 0,//コントローラー無し
+                autoplay: 1,//オートプレイ
+                showinfo: 0//動画タイトルなど表示しない
+            },
+            events: {
+                'onReady': onPlayerReady
+            }
+          }
+        );
+      }
+    //プレイ準備完了後
+      function onPlayerReady(event) {
+        event.target.playVideo();
+        event.target.mute();
+      }
+  </script>
 
 </body>
 </html>
