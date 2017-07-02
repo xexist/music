@@ -1,29 +1,38 @@
-var gulp = require("gulp");
-var watch = require('gulp-watch');
-var browserSync = require("browser-sync");
-var sass = require('gulp-sass');
-var autoprefixer = require('gulp-autoprefixer');
-var plumber = require('gulp-plumber');
+var gulp = require("gulp"),
+    watch = require('gulp-watch'),
+    browserSync = require("browser-sync"),
+    sass = require('gulp-sass'),
+    autoprefixer = require('gulp-autoprefixer'),
+    plumber = require('gulp-plumber'),
+    connect = require('gulp-connect-php'),
+    sftp = require('gulp-sftp');
 
 // ディレクトリ設定
 var dir = {
-    dist: 'htdocs'
+  dist: 'htdocs'
 }
+
+var loadJsonSync = function(filename) {
+  return JSON.parse(fs.readFileSync(filename, 'utf8'));
+};
 
 gulp.task('sass', function() {
   gulp.src('./scss/**/*.scss')
-    .pipe(plumber())
-    .pipe(sass())
-    .pipe(autoprefixer())
-    .pipe(gulp.dest(dir.dist + '/css/'));
+  .pipe(plumber())
+  .pipe(sass())
+  .pipe(autoprefixer())
+  .pipe(gulp.dest(dir.dist + '/css/'));
 });
 
-gulp.task('browser-sync', function() {
-    browserSync.init({
-        server: {
-            baseDir: dir.dist
-        }
-    });
+gulp.task('connect', function() {
+  connect.server({
+  port:8001,
+  base:dir.dist
+  }, function (){
+  browserSync({
+    proxy: 'localhost:8001'
+  });
+  });
 });
 
 gulp.task('reload', function(){
@@ -32,20 +41,20 @@ gulp.task('reload', function(){
 
 // ファイル更新監視
 gulp.task('watch', function() {
-    gulp.watch([
-        dir.dist + '/{,**/}*.html', // 対象ファイル
-        dir.dist + '/{,**/}*.css', 
-        dir.src + '/{,**/}*.js'
+  gulp.watch([
+    dir.dist + '/{,**/}*.html', // 対象ファイル
+    dir.dist + '/{,**/}*.css', 
+    dir.src + '/{,**/}*.js'
     ],['reload']); // 実行タスク（scss ファイル以外が更新されたタイミングでブラウザを自動更新）
-    gulp.watch("./scss/**/*.scss",['sass','reload']);
+  gulp.watch("./scss/**/*.scss",['sass','reload']);
 });
 
 // 以下タスクの登録
 // デフォルト（各ファイル監視してビルド）
 gulp.task('default', [
-    'browser-sync',
-    'sass',
-    'watch'
+  'connect',
+  'sass',
+  'watch'
 ], function() {
   gulp.watch(dir.src,["reload"]);
 });

@@ -7,8 +7,10 @@
     "browser-sync": "^2.18.12",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
+    "gulp-connect-php": "^1.0.1",
     "gulp-plumber": "^1.1.0",
     "gulp-sass": "^3.1.0",
+    "gulp-sftp": "^0.1.5",
     "gulp-watch": "^4.3.11"
   },
   "scripts": {

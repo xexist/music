@@ -179,7 +179,9 @@ ul.banner-social-buttons {
         margin-bottom: 0; } }
 
 footer {
-  padding: 50px 0; }
+  background: black;
+  padding: 50px 0;
+  margin-bottom: 67px; }
   footer p {
     font-size: 14px;
     margin: 0; }
