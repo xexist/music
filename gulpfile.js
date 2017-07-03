@@ -7,7 +7,6 @@ var gulp = require("gulp"),
     connect = require('gulp-connect-php'),
     sftp = require('gulp-sftp');
 
-// ディレクトリ設定
 var dir = {
   dist: 'htdocs'
 }
@@ -39,18 +38,16 @@ gulp.task('reload', function(){
   browserSync.reload();
 });
 
-// ファイル更新監視
 gulp.task('watch', function() {
   gulp.watch([
-    dir.dist + '/{,**/}*.html', // 対象ファイル
+    dir.dist + '/{,**/}*.html',
+    dir.dist + '/{,**/}*.php',
     dir.dist + '/{,**/}*.css', 
     dir.src + '/{,**/}*.js'
-    ],['reload']); // 実行タスク（scss ファイル以外が更新されたタイミングでブラウザを自動更新）
+    ],['reload']); 
   gulp.watch("./scss/**/*.scss",['sass','reload']);
 });
 
-// 以下タスクの登録
-// デフォルト（各ファイル監視してビルド）
 gulp.task('default', [
   'connect',
   'sass',
