@@ -78,7 +78,7 @@ a {
             &:focus,
             &:active {
                 outline: none;
-                background-color: transparent;
+                background-color: fade-out(black, .7);
             }
         }
     }
@@ -97,7 +97,7 @@ a {
         }
         .nav-link.active {
             outline: none;
-            background-color: rgba(white, .3);
+            background-color: rgba(black, .1);
             &:hover {
                 color: white;
             }
