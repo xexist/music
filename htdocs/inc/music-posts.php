@@ -26,7 +26,17 @@ if ( have_posts() ) while ( have_posts() ) : the_post();
 <h3 class="title h5">
   <a href="<?php the_permalink(); ?>"><?php the_title_attribute(); ?></a>
 </h3>
-<p class="name"><?php the_author(); ?></p>
+<p class="name">
+<?php 
+$name = get_the_author();
+if ( $name == 'お父ちゃん') {
+  $name = 'ア・ノッキンオンニョ 司';
+} elseif ( $name == 'お母ちゃん' ) {
+  $name = 'welcome 脳';
+}
+echo $name;
+?>
+</p>
 </div>
 
 <?php 

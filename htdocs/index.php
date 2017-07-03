@@ -155,7 +155,7 @@
               </figure>
             </div>
             <div class="p-2">
-              <div class="title">
+              <div class="title mt-1">
                 <a href="">
                   Song Title
                 </a>
@@ -168,29 +168,34 @@
         <div class="col-md-3 col-6 pt-4">
           <div class="row">
             <div class="col-2">
-              <i id="play" class="fa fa-play fa-2x" aria-hidden="true"></i>
+              <i id="play" class="fa fa-play fa-2x" aria-hidden="true" role="button"></i>
             </div>
             <div class="col-2">
-              <i class="fa fa-step-backward fa-2x" aria-hidden="true"></i>
+              <i class="fa fa-step-backward fa-2x" aria-hidden="true" role="button"></i>
             </div>
             <div class="col-2">
-              <i class="fa fa-step-forward fa-2x" aria-hidden="true"></i>
+              <i class="fa fa-step-forward fa-2x" aria-hidden="true" role="button"></i>
             </div>
             <div class="col-2">
-              <i class="fa fa-repeat fa-2x" aria-hidden="true"></i>
+              <i class="fa fa-repeat fa-2x" aria-hidden="true" role="button"></i>
             </div>
             <div class="col-2">
-              <i class="fa fa-random fa-2x" aria-hidden="true"></i>
+              <i class="fa fa-random fa-2x" aria-hidden="true" role="button"></i>
             </div>
           </div>
         </div>
 
-        <div class="col-md-6 mt-4 p-0">
-          <div id="timeline"></div>
-          <div id="fader"></div>
-          <div class="d-flex justify-content-between">
-            <div id="currentTime" class="p-0">0:00</div>
-            <div id="duration" class="p-0">0:00</div>
+        <div class="col-md-6 px-2 align-self-center">
+          <div class="progress mt-2" role="button">
+            <div class="progress-bar" role="progressbar" style="height: 1px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <div class="row justify-content-between mt-1">
+            <div class="col-2" id="currentTime">
+              0:00
+            </div>
+            <div class="col-2 text-right" id="duration">
+              0:00
+            </div>
           </div>
         </div>
 

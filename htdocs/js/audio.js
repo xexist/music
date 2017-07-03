@@ -6,13 +6,12 @@ var duration;
 var isPlaying = true;
 
 var controller = document.getElementById('controller');
-var timeline = 'timeline';
 
 // 再生バーに再生位置のセット
 function setCurrentTime() {
   currentTime = audio.currentTime;
   document.getElementById("currentTime").innerHTML = time(Math.round(currentTime));
-  document.getElementById("fader").style.marginLeft = (currentTime / duration) * 100 + "%";
+  document.querySelector('.progress-bar').style.width = (currentTime / duration) * 100 + "%";
 }
 // 再生バーの描画
 function draw() {
@@ -42,10 +41,11 @@ function time(t) {
  * Event
  */
 // バーのクリック
-document.getElementById(timeline).addEventListener( "click", function( e ) {
+document.querySelector('.progress').addEventListener( "click", function( e ) {
+  console.log(0);
   var mouseX = e.pageX;
-  var element = document.getElementById(timeline) ;
-  var rect = element.getBoundingClientRect() ;
+  var element = document.querySelector('.progress');
+  var rect = element.getBoundingClientRect();
   var positionX = rect.left + window.pageXOffset ;  // 要素のX座標
   var w = element.offsetWidth;  // 要素の幅
   var offsetX = mouseX - positionX ;
