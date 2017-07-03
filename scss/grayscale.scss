@@ -22,7 +22,6 @@ h6 {
     font-weight: 700;
     margin: 0 0 35px;
     letter-spacing: 1px;
-    text-transform: uppercase;
 }
 
 p {
@@ -52,19 +51,19 @@ a {
     font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     margin-bottom: 0;
     text-transform: uppercase;
-    border-bottom: 1px solid fade-out(white, .7);
-    background-color: black;
+    border-bottom: 1px solid fade-out(black, .7);
+    background-color: white;
     .navbar-toggler {
         font-size: 14px;
         padding: 11px;
-        color: white;
-        border: 1px solid white;
+        color: black;
+        border: 1px solid black;
     }
     .navbar-brand {
         font-weight: 700;
     }
     a {
-        color: white;
+        color: black;
     }
     .navbar-nav {
         .nav-item {
@@ -74,7 +73,7 @@ a {
             &:hover {
                 color: fade(white, 80%);
                 outline: none;
-                background-color: transparent;
+                background-color: fade-out(black, .7);
             }
             &:focus,
             &:active {
@@ -93,8 +92,8 @@ a {
         background: transparent;
         &.navbar-shrink {
             padding: 10px 0;
-            border-bottom: 1px solid fade-out(white, .7);
-            background: black;
+            border-bottom: 1px solid fade-out(black, .7);
+            background: white;
         }
         .nav-link.active {
             outline: none;
@@ -150,15 +149,15 @@ a {
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
-    color: white;
-    border: 2px solid white;
+    color: black;
+    border: 2px solid black;
     border-radius: 100% !important;
     background: transparent;
     &:hover,
     &:focus {
-        color: white;
+        color: black;
         outline: none;
-        background: fade-out(white, .9);
+        background: fade-out(black, .9);
     }
 }
 

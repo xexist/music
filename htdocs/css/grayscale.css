@@ -17,8 +17,7 @@ h6 {
   font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 700;
   margin: 0 0 35px;
-  letter-spacing: 1px;
-  text-transform: uppercase; }
+  letter-spacing: 1px; }
 
 p {
   font-size: 16px;
@@ -42,13 +41,13 @@ a {
   font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   margin-bottom: 0;
   text-transform: uppercase;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   background-color: white; }
   #mainNav .navbar-toggler {
     font-size: 14px;
     padding: 11px;
     color: black;
-    border: 1px solid white; }
+    border: 1px solid black; }
   #mainNav .navbar-brand {
     font-weight: 700; }
   #mainNav a {
@@ -59,7 +58,7 @@ a {
     #mainNav .navbar-nav .nav-item:hover {
       color: fade(white, 80%);
       outline: none;
-      background-color: transparent; }
+      background-color: rgba(0, 0, 0, 0.3); }
     #mainNav .navbar-nav .nav-item:focus, #mainNav .navbar-nav .nav-item:active {
       outline: none;
       background-color: transparent; }
@@ -87,7 +86,7 @@ a {
   height: auto;
   padding: 100px 0;
   text-align: center;
-  color: black;
+  color: white;
   background-size: cover; }
   .masthead .intro-body {
     display: table-cell;
@@ -118,9 +117,9 @@ a {
   border-radius: 100% !important;
   background: transparent; }
   .btn-circle:hover, .btn-circle:focus {
-    color: white;
+    color: black;
     outline: none;
-    background: rgba(255, 255, 255, 0.1); }
+    background: rgba(0, 0, 0, 0.1); }
 
 .content-section {
   padding: 100px 0; }
