@@ -43,16 +43,16 @@ a {
   margin-bottom: 0;
   text-transform: uppercase;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  background-color: black; }
+  background-color: white; }
   #mainNav .navbar-toggler {
     font-size: 14px;
     padding: 11px;
-    color: white;
+    color: black;
     border: 1px solid white; }
   #mainNav .navbar-brand {
     font-weight: 700; }
   #mainNav a {
-    color: white; }
+    color: black; }
   #mainNav .navbar-nav .nav-item {
     -webkit-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out; }
@@ -73,8 +73,8 @@ a {
       background: transparent; }
       #mainNav.navbar-shrink {
         padding: 10px 0;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-        background: black; }
+        border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+        background: white; }
       #mainNav .nav-link.active {
         outline: none;
         background-color: rgba(255, 255, 255, 0.3); }
@@ -87,9 +87,7 @@ a {
   height: auto;
   padding: 100px 0;
   text-align: center;
-  color: white;
-  background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
-  background-color: black;
+  color: black;
   background-size: cover; }
   .masthead .intro-body {
     display: table-cell;
@@ -115,8 +113,8 @@ a {
   padding: 7px 0;
   -webkit-transition: background .3s ease-in-out;
   transition: background .3s ease-in-out;
-  color: white;
-  border: 2px solid white;
+  color: black;
+  border: 2px solid black;
   border-radius: 100% !important;
   background: transparent; }
   .btn-circle:hover, .btn-circle:focus {
@@ -131,7 +129,6 @@ a {
   width: 100%;
   padding: 50px 0;
   color: white;
-  background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
   background-color: black;
   background-size: cover; }
 
