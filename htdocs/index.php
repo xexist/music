@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -82,61 +80,12 @@
   <section id="music" class="container text-center">
     <h2 class="">Music</h2>
     <div class="row">
-            <div class="col-lg-3 col-md-4 col-6 item" data-file="http://homemadegarbage.0t0.jp/wordpress/wp-content/uploads/2017/07/Alleluia.mp3">
-        <div class="thumbnail mb-1" href="#">
-          <img width="300" height="300" src="http://homemadegarbage.0t0.jp/wordpress/wp-content/uploads/2017/07/alleluia-300x300.png" class="attachment-medium size-medium wp-post-image" alt="" srcset="http://homemadegarbage.0t0.jp/wordpress/wp-content/uploads/2017/07/alleluia-300x300.png 300w, http://homemadegarbage.0t0.jp/wordpress/wp-content/uploads/2017/07/alleluia-150x150.png 150w, http://homemadegarbage.0t0.jp/wordpress/wp-content/uploads/2017/07/alleluia-120x120.png 120w, http://homemadegarbage.0t0.jp/wordpress/wp-content/uploads/2017/07/alleluia.png 572w" sizes="(max-width: 300px) 85vw, 300px" />          <i class="fa fa-play-circle fa-5x" aria-hidden="true"></i>
-        </div>
-        <h3 class="title h5">
-          <a href="http://homemadegarbage.0t0.jp/alleluia">Alleluia</a>
-        </h3>
-        <p class="name">お母ちゃん</p>
-      </div>
-            <div class="col-lg-3 col-md-4 col-6 item" data-file="http://homemadegarbage.0t0.jp/wordpress/wp-content/uploads/2017/07/ELiZA.mp3">
-        <div class="thumbnail mb-1" href="#">
-          <img width="300" height="300" src="http://homemadegarbage.0t0.jp/wordpress/wp-content/uploads/2017/07/37_ELiZA-mp3-image-300x300.jpg" class="attachment-medium size-medium wp-post-image" alt="" srcset="http://homemadegarbage.0t0.jp/wordpress/wp-content/uploads/2017/07/37_ELiZA-mp3-image-300x300.jpg 300w, http://homemadegarbage.0t0.jp/wordpress/wp-content/uploads/2017/07/37_ELiZA-mp3-image-150x150.jpg 150w, http://homemadegarbage.0t0.jp/wordpress/wp-content/uploads/2017/07/37_ELiZA-mp3-image-120x120.jpg 120w, http://homemadegarbage.0t0.jp/wordpress/wp-content/uploads/2017/07/37_ELiZA-mp3-image.jpg 500w" sizes="(max-width: 300px) 85vw, 300px" />          <i class="fa fa-play-circle fa-5x" aria-hidden="true"></i>
-        </div>
-        <h3 class="title h5">
-          <a href="http://homemadegarbage.0t0.jp/eliza">ELiZA</a>
-        </h3>
-        <p class="name">お母ちゃん</p>
-      </div>
-            <div class="col-lg-3 col-md-4 col-6 item" data-file="http://homemadegarbage.0t0.jp/wordpress/wp-content/uploads/2017/07/thrash_THRASH_us.mp3">
-        <div class="thumbnail mb-1" href="#">
-          <img width="300" height="300" src="http://homemadegarbage.0t0.jp/wordpress/wp-content/uploads/2017/07/thrash_THRASH_us-mp3-image.jpg" class="attachment-medium size-medium wp-post-image" alt="" srcset="http://homemadegarbage.0t0.jp/wordpress/wp-content/uploads/2017/07/thrash_THRASH_us-mp3-image.jpg 300w, http://homemadegarbage.0t0.jp/wordpress/wp-content/uploads/2017/07/thrash_THRASH_us-mp3-image-150x150.jpg 150w, http://homemadegarbage.0t0.jp/wordpress/wp-content/uploads/2017/07/thrash_THRASH_us-mp3-image-120x120.jpg 120w" sizes="(max-width: 300px) 85vw, 300px" />          <i class="fa fa-play-circle fa-5x" aria-hidden="true"></i>
-        </div>
-        <h3 class="title h5">
-          <a href="http://homemadegarbage.0t0.jp/thrash-thrash">thrash/THRASH</a>
-        </h3>
-        <p class="name">お父ちゃん</p>
-      </div>
-            <div class="col-lg-3 col-md-4 col-6 item" data-file="http://homemadegarbage.0t0.jp/wordpress/wp-content/uploads/2017/07/BREATHE-OUT.mp3">
-        <div class="thumbnail mb-1" href="#">
-          <img width="300" height="300" src="http://homemadegarbage.0t0.jp/wordpress/wp-content/uploads/2017/07/BREATHE-OUT-mp3-image-300x300.jpg" class="attachment-medium size-medium wp-post-image" alt="" srcset="http://homemadegarbage.0t0.jp/wordpress/wp-content/uploads/2017/07/BREATHE-OUT-mp3-image-300x300.jpg 300w, http://homemadegarbage.0t0.jp/wordpress/wp-content/uploads/2017/07/BREATHE-OUT-mp3-image-150x150.jpg 150w, http://homemadegarbage.0t0.jp/wordpress/wp-content/uploads/2017/07/BREATHE-OUT-mp3-image-120x120.jpg 120w, http://homemadegarbage.0t0.jp/wordpress/wp-content/uploads/2017/07/BREATHE-OUT-mp3-image.jpg 500w" sizes="(max-width: 300px) 85vw, 300px" />          <i class="fa fa-play-circle fa-5x" aria-hidden="true"></i>
-        </div>
-        <h3 class="title h5">
-          <a href="http://homemadegarbage.0t0.jp/breathe-out">BREATHE OUT</a>
-        </h3>
-        <p class="name">お父ちゃん</p>
-      </div>
-            <div class="col-lg-3 col-md-4 col-6 item" data-file="http://homemadegarbage.0t0.jp/wordpress/wp-content/uploads/2017/06/LD50.mp3">
-        <div class="thumbnail mb-1" href="#">
-          <img width="300" height="300" src="http://homemadegarbage.0t0.jp/wordpress/wp-content/uploads/2017/06/02-LD50-mp3-image-300x300.jpg" class="attachment-medium size-medium wp-post-image" alt="" srcset="http://homemadegarbage.0t0.jp/wordpress/wp-content/uploads/2017/06/02-LD50-mp3-image-300x300.jpg 300w, http://homemadegarbage.0t0.jp/wordpress/wp-content/uploads/2017/06/02-LD50-mp3-image-150x150.jpg 150w, http://homemadegarbage.0t0.jp/wordpress/wp-content/uploads/2017/06/02-LD50-mp3-image-120x120.jpg 120w, http://homemadegarbage.0t0.jp/wordpress/wp-content/uploads/2017/06/02-LD50-mp3-image.jpg 477w" sizes="(max-width: 300px) 85vw, 300px" />          <i class="fa fa-play-circle fa-5x" aria-hidden="true"></i>
-        </div>
-        <h3 class="title h5">
-          <a href="http://homemadegarbage.0t0.jp/ld50">LD50</a>
-        </h3>
-        <p class="name">N8112</p>
-      </div>
-            <div class="col-lg-3 col-md-4 col-6 item" data-file="http://homemadegarbage.0t0.jp/wordpress/wp-content/uploads/2017/06/Head-Like-A-Hole.mp3">
-        <div class="thumbnail mb-1" href="#">
-          <img width="300" height="300" src="http://homemadegarbage.0t0.jp/wordpress/wp-content/uploads/2017/06/01-Head-Like-A-Hole-mp3-image-300x300.jpg" class="attachment-medium size-medium wp-post-image" alt="" srcset="http://homemadegarbage.0t0.jp/wordpress/wp-content/uploads/2017/06/01-Head-Like-A-Hole-mp3-image-300x300.jpg 300w, http://homemadegarbage.0t0.jp/wordpress/wp-content/uploads/2017/06/01-Head-Like-A-Hole-mp3-image-150x150.jpg 150w, http://homemadegarbage.0t0.jp/wordpress/wp-content/uploads/2017/06/01-Head-Like-A-Hole-mp3-image-120x120.jpg 120w, http://homemadegarbage.0t0.jp/wordpress/wp-content/uploads/2017/06/01-Head-Like-A-Hole-mp3-image.jpg 392w" sizes="(max-width: 300px) 85vw, 300px" />          <i class="fa fa-play-circle fa-5x" aria-hidden="true"></i>
-        </div>
-        <h3 class="title h5">
-          <a href="http://homemadegarbage.0t0.jp/head-like-a-hole-nincover">Head Like A Hole [NIN Cover]</a>
-        </h3>
-        <p class="name">N8112</p>
-      </div>
-          </div>
+
+<?php
+ echo file_get_contents('http://homemadegarbage.0t0.jp/n8112/inc/music-posts.php');
+?>
+
+    </div>
     <!--
     <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">More Video Page</a>
     -->
@@ -148,6 +97,7 @@
       <div class="container">
         <h2>Video</h2>
         <p>準備中</p>
+        <!--
         <div class="row">
           <div class="col-lg-3 col-md-4 item">
             <a class="thumbnail" href="#">
@@ -171,6 +121,7 @@
           </div>
         </div>
         <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">More Video Page</a>
+        -->
       </div>
     </div>
   </section>
@@ -267,32 +218,43 @@
   <script src="js/grayscale.js"></script>
   <script src="js/audio.js"></script>
 
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-76849716-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  <!-- YouTube -->
   <script src="https://www.youtube.com/iframe_api"></script>
   <script>  
-    // YouTubeの埋め込み
-      function onYouTubeIframeAPIReady() {
-        ytPlayer = new YT.Player(
-          'masthead', // 埋め込む場所をIDで設定
-          {
-            videoId: 'Adut7kwNfSs', // YouTubeのIDを指定
-            playerVars: {
-                loop: 1,//0:ループしない 1:ループする 1の場合playlist設定必須
-                controls: 0,//コントローラー無し
-                autoplay: 1,//オートプレイ
-                showinfo: 0//動画タイトルなど表示しない
-            },
-            events: {
-                'onReady': onPlayerReady
-            }
+    function onYouTubeIframeAPIReady() {
+      ytPlayer = new YT.Player(
+        'masthead', // 埋め込む場所をIDで設定
+        {
+          videoId: 'Adut7kwNfSs', // YouTubeのIDを指定
+          playerVars: {
+              loop: 1,//0:ループしない 1:ループする 1の場合playlist設定必須
+              controls: 0,//コントローラー無し
+              autoplay: 1,//オートプレイ
+              showinfo: 0//動画タイトルなど表示しない
+          },
+          events: {
+              'onReady': onPlayerReady
           }
-        );
-      }
+        }
+      );
+    }
     //プレイ準備完了後
-      function onPlayerReady(event) {
-        event.target.playVideo();
-        event.target.mute();
-      }
+    function onPlayerReady(event) {
+      event.target.playVideo();
+      event.target.mute();
+    }
   </script>
+
 
 </body>
 </html>
