@@ -49,7 +49,10 @@ a {
     color: black;
     border: 1px solid black; }
   #mainNav .navbar-brand {
-    font-weight: 700; }
+    font-weight: 700;
+    width: 80px;
+    position: relative;
+    text-align: center; }
   #mainNav a {
     color: black; }
   #mainNav .navbar-nav .nav-item {
@@ -57,8 +60,7 @@ a {
     transition: background .3s ease-in-out; }
     #mainNav .navbar-nav .nav-item:hover {
       color: fade(white, 80%);
-      outline: none;
-      background-color: rgba(0, 0, 0, 0.3); }
+      outline: none; }
     #mainNav .navbar-nav .nav-item:focus, #mainNav .navbar-nav .nav-item:active {
       outline: none;
       background-color: rgba(0, 0, 0, 0.3); }
@@ -74,6 +76,12 @@ a {
         padding: 10px 0;
         border-bottom: 1px solid rgba(0, 0, 0, 0.3);
         background: white; }
+      #mainNav .nav-link {
+        position: relative;
+        min-width: 100px;
+        padding: 0;
+        width: 100px;
+        height: 40px; }
       #mainNav .nav-link.active {
         outline: none;
         background-color: rgba(0, 0, 0, 0.1); }

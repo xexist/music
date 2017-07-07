@@ -49,7 +49,7 @@ figure {
       height: 80px;
       color: transparent;
       transition: all .2s ease-in-out;
-      border-radius: 50%;
+      f-radius: 50%;
       padding-left: 5px;
     }
     &:hover {
@@ -100,4 +100,335 @@ figure {
   }
 }
 
+/* Text Effect glitch
+   ========================================================================== */
+.glitch{
+  color:black;
+  position:relative;
+  margin:0 auto;
+}
+@keyframes noise-anim{
+  $steps:20;
+  @for $i from 0 through $steps{
+    #{percentage($i*(1/$steps))}{
+      clip:rect(random(100)+px,9999px,random(100)+px,0);
+    }
+  }
+}
+.glitch:after{
+  content:attr(data-text);
+  position:absolute;
+  left:0;
+  right: 0;
+  margin:auto;
+  text-shadow:-1px 0 red;
+  top:0;
+//  color:black;
+//  background:black;
+  overflow:hidden;
+  clip:rect(0,900px,0,0); 
+  animation:noise-anim 2s infinite linear alternate-reverse;
+}
+
+@keyframes noise-anim-2{
+  $steps:20;
+  @for $i from 0 through $steps{
+    #{percentage($i*(1/$steps))}{
+      clip:rect(random(100)+px,9999px,random(100)+px,0);
+    }
+  }
+}
+.glitch:before{
+  content:attr(data-text);
+  position:absolute;
+  left:0;
+  right: 0;
+  margin:auto;
+  text-shadow:1px 0 blue; 
+  top:0;
+//  color:white;
+//  background:black;
+  overflow:hidden;
+  clip:rect(0,900px,0,0); 
+  animation:noise-anim-2 3s infinite linear alternate-reverse;
+}
+
+/* Text Effect Typing
+   ========================================================================== */
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+.line-1{
+}
+
+/* Animation */
+.anim-typewriter{
+  font-family: 'Anonymous Pro', monospace;  
+    position: relative;
+    top: 50%;  
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+    animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+.anim-typewriter.line-2{
+  animation-delay: 3s;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 100%;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+
+
+
+/* Button Effect BTN TWO
+   ========================================================================== */
+/* BTN TWO */
+.btn-two::before, .btn-two::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  transition: all 0.3s;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.btn-two:hover::after {
+  animation-name: rotatecw;
+  animation-duration: 2s;
+}
+.btn-two:hover::before {
+  animation-name: rotateccw; 
+  animation-duration: 3s;
+}
+.btn-two:hover::after, .btn-two:hover::before {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+//  left: 96px;
+  width: 55px;
+  height: 55px;
+  top: -3px;
+  left: 8px;
+
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotatecw {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+@keyframes rotateccw {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(-360deg);}
+}
+
+
+/* Button Effect 10
+   ========================================================================== */
+.b10_tveffect div {
+    position: absolute;
+    text-align: center;
+    top: 0px;
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.b10_tveffect div:nth-child(1) {
+//    color: #000000;
+//    background-color: #ffffff;
+    -webkit-transition: all 0.1s ease;
+    padding: 10px;
+}
+
+.b10_tveffect div:nth-child(2) {
+    overflow: hidden;
+}
+
+.b10_tveffect div:nth-child(2) div {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: inherit;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+//    padding: 10px;
+}
+
+.b10_tveffect div:nth-child(2) div:nth-child(1) {
+    color: rgba(200, 120, 120, 0.8);
+    opacity: 0;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAGCAYAAAAL+1RLAAAAF0lEQVQIW2NkwAIYgWKS6OIgQQxAoUoAE4AAUnD/0ugAAAAASUVORK5CYII=) repeat;
+}
+
+.b10_tveffect div:nth-child(2) div:nth-child(2) {
+    color: rgba(120, 200, 120, 0.8);
+    opacity: 0;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAGCAYAAAAL+1RLAAAAF0lEQVQIW2NkwAIYgWKS6OIgQQxAoUoAE4AAUnD/0ugAAAAASUVORK5CYII=) repeat;
+}
+
+.b10_tveffect div:nth-child(2) div:nth-child(3) {
+    color: rgba(120, 120, 200, 0.8);
+    opacity: 0;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAGCAYAAAAL+1RLAAAAF0lEQVQIW2NkwAIYgWKS6OIgQQxAoUoAE4AAUnD/0ugAAAAASUVORK5CYII=) repeat;
+}
+
+.b10_tveffect:hover div:nth-child(1) {
+    color: #ffffff;
+    background-color: black;
+    transition: color 0s ease;
+    -webkit-transition: color 0s ease;
+    -moz-transition: color 0s ease;
+    transition: background-color 0.3s ease 0.2s;
+    -webkit-transition: background-color 0.3s ease 0.2s;
+    -moz-transition: background-color 0.3s ease 0.2s;
+}
+
+.b10_tveffect:hover div:nth-child(2) div:nth-child(1) {
+    animation: b10_tveffect_red 0.25s linear;
+    -webkit-animation: b10_tveffect_red 0.25s linear;
+    -moz-animation: b10_tveffect_red 0.25s linear;
+}
+
+.b10_tveffect:hover div:nth-child(2) div:nth-child(2) {
+    animation: b10_tveffect_green 0.25s linear;
+    -webkit-animation: b10_tveffect_green 0.25s linear;
+    -moz-animation: b10_tveffect_green 0.25s linear;
+}
+
+.b10_tveffect:hover div:nth-child(2) div:nth-child(3) {
+    animation: b10_tveffect_blue 0.25s linear;
+    -webkit-animation: b10_tveffect_blue 0.25s linear;
+    -moz-animation: b10_tveffect_blue 0.25s linear;
+}
+
+@-webkit-keyframes b10_tveffect_red {
+    from,
+    to {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+        -webkit-transform: scale(1.8, 1.6) translate(-10px, 3px) skewX(30deg);
+    }
+    50% {
+        opacity: 1;
+        -webkit-transform: scale(1.5, 1.2) translate(20px, 6px) skewX(5deg);
+    }
+    75% {
+        opacity: 1;
+        -webkit-transform: scale(0.9, 1.8) translate(-16px, -1px) skewX(-20deg);
+    }
+}
+
+@-webkit-keyframes b10_tveffect_green {
+    from,
+    to {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+        -webkit-transform: scale(1.3, 1.5) translate(3px, 6px) skewX(25deg);
+    }
+    50% {
+        opacity: 1;
+        -webkit-transform: scale(1.6, 1.1) translate(-16px, -5px) skewX(-15deg);
+    }
+    75% {
+        opacity: 1;
+        -webkit-transform: scale(1, 1.8) translate(18px, 4px) skewX(15deg);
+    }
+}
+
+@-webkit-keyframes b10_tveffect_blue {
+    from,
+    to {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+        -webkit-transform: scale(1.2, 1.4) translate(-10px, -3px) skewX(-25deg);
+    }
+    50% {
+        opacity: 1;
+        -webkit-transform: scale(1.9, 1.1) translate(16px, 3px) skewX(5deg);
+    }
+    75% {
+        opacity: 1;
+        -webkit-transform: scale(1.3, 2) translate(-30px, -3px) skewX(20deg);
+    }
+}
+
+@-moz-keyframes b10_tveffect_red {
+    from,
+    to {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+        transform: scale(1.8, 1.6) translate(-10px, 3px) skewX(30deg);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.5, 1.2) translate(20px, 6px) skewX(5deg);
+    }
+    75% {
+        opacity: 1;
+        transform: scale(0.9, 1.8) translate(-16px, -1px) skewX(-20deg);
+    }
+}
+
+@-moz-keyframes b10_tveffect_green {
+    from,
+    to {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+        transform: scale(1.3, 1.5) translate(3px, 6px) skewX(25deg);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.6, 1.1) translate(-16px, -5px) skewX(-15deg);
+    }
+    75% {
+        opacity: 1;
+        transform: scale(1, 1.8) translate(18px, 4px) skewX(15deg);
+    }
+}
+
+@-moz-keyframes b10_tveffect_blue {
+    from,
+    to {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+        transform: scale(1.2, 1.4) translate(-10px, -3px) skewX(-25deg);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.9, 1.1) translate(16px, 3px) skewX(5deg);
+    }
+    75% {
+        opacity: 1;
+        transform: scale(1.3, 2) translate(-30px, -3px) skewX(20deg);
+    }
+}
 

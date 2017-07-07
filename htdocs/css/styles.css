@@ -2,6 +2,7 @@
 /* font
    ========================================================================== */
 @import url(https://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Noto Sans Japanese", "¥Ò¥é¥®¥Î½Ç¥´ ProN W3", Hiragino Kaku Gothic ProN, Arial, Meiryo, sans-serif;
   color: #655858; }
@@ -40,7 +41,7 @@ figure img {
       color: transparent;
       -webkit-transition: all .2s ease-in-out;
       transition: all .2s ease-in-out;
-      border-radius: 50%;
+      f-radius: 50%;
       padding-left: 5px; }
     .item .thumbnail:hover i {
       color: black;
@@ -74,3 +75,437 @@ figure img {
   #controller .progress {
     border: 2px solid white;
     background: #ccc; }
+
+/* Text Effect glitch
+   ========================================================================== */
+.glitch {
+  color: black;
+  position: relative;
+  margin: 0 auto; }
+
+@-webkit-keyframes noise-anim {
+  0% {
+    clip: rect(49px, 9999px, 4px, 0); }
+  5% {
+    clip: rect(59px, 9999px, 43px, 0); }
+  10% {
+    clip: rect(83px, 9999px, 1px, 0); }
+  15% {
+    clip: rect(12px, 9999px, 24px, 0); }
+  20% {
+    clip: rect(2px, 9999px, 3px, 0); }
+  25% {
+    clip: rect(80px, 9999px, 22px, 0); }
+  30% {
+    clip: rect(66px, 9999px, 74px, 0); }
+  35% {
+    clip: rect(43px, 9999px, 26px, 0); }
+  40% {
+    clip: rect(75px, 9999px, 44px, 0); }
+  45% {
+    clip: rect(71px, 9999px, 4px, 0); }
+  50% {
+    clip: rect(41px, 9999px, 26px, 0); }
+  55% {
+    clip: rect(74px, 9999px, 31px, 0); }
+  60% {
+    clip: rect(79px, 9999px, 63px, 0); }
+  65% {
+    clip: rect(85px, 9999px, 12px, 0); }
+  70% {
+    clip: rect(54px, 9999px, 25px, 0); }
+  75% {
+    clip: rect(46px, 9999px, 3px, 0); }
+  80% {
+    clip: rect(3px, 9999px, 36px, 0); }
+  85% {
+    clip: rect(27px, 9999px, 40px, 0); }
+  90% {
+    clip: rect(68px, 9999px, 94px, 0); }
+  95% {
+    clip: rect(66px, 9999px, 42px, 0); }
+  100% {
+    clip: rect(7px, 9999px, 33px, 0); } }
+
+@keyframes noise-anim {
+  0% {
+    clip: rect(49px, 9999px, 4px, 0); }
+  5% {
+    clip: rect(59px, 9999px, 43px, 0); }
+  10% {
+    clip: rect(83px, 9999px, 1px, 0); }
+  15% {
+    clip: rect(12px, 9999px, 24px, 0); }
+  20% {
+    clip: rect(2px, 9999px, 3px, 0); }
+  25% {
+    clip: rect(80px, 9999px, 22px, 0); }
+  30% {
+    clip: rect(66px, 9999px, 74px, 0); }
+  35% {
+    clip: rect(43px, 9999px, 26px, 0); }
+  40% {
+    clip: rect(75px, 9999px, 44px, 0); }
+  45% {
+    clip: rect(71px, 9999px, 4px, 0); }
+  50% {
+    clip: rect(41px, 9999px, 26px, 0); }
+  55% {
+    clip: rect(74px, 9999px, 31px, 0); }
+  60% {
+    clip: rect(79px, 9999px, 63px, 0); }
+  65% {
+    clip: rect(85px, 9999px, 12px, 0); }
+  70% {
+    clip: rect(54px, 9999px, 25px, 0); }
+  75% {
+    clip: rect(46px, 9999px, 3px, 0); }
+  80% {
+    clip: rect(3px, 9999px, 36px, 0); }
+  85% {
+    clip: rect(27px, 9999px, 40px, 0); }
+  90% {
+    clip: rect(68px, 9999px, 94px, 0); }
+  95% {
+    clip: rect(66px, 9999px, 42px, 0); }
+  100% {
+    clip: rect(7px, 9999px, 33px, 0); } }
+
+.glitch:after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-shadow: -1px 0 red;
+  top: 0;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  -webkit-animation: noise-anim 2s infinite linear alternate-reverse;
+          animation: noise-anim 2s infinite linear alternate-reverse; }
+
+@-webkit-keyframes noise-anim-2 {
+  0% {
+    clip: rect(67px, 9999px, 22px, 0); }
+  5% {
+    clip: rect(74px, 9999px, 28px, 0); }
+  10% {
+    clip: rect(54px, 9999px, 78px, 0); }
+  15% {
+    clip: rect(50px, 9999px, 11px, 0); }
+  20% {
+    clip: rect(56px, 9999px, 10px, 0); }
+  25% {
+    clip: rect(77px, 9999px, 42px, 0); }
+  30% {
+    clip: rect(47px, 9999px, 84px, 0); }
+  35% {
+    clip: rect(50px, 9999px, 24px, 0); }
+  40% {
+    clip: rect(13px, 9999px, 81px, 0); }
+  45% {
+    clip: rect(85px, 9999px, 35px, 0); }
+  50% {
+    clip: rect(15px, 9999px, 25px, 0); }
+  55% {
+    clip: rect(97px, 9999px, 39px, 0); }
+  60% {
+    clip: rect(68px, 9999px, 28px, 0); }
+  65% {
+    clip: rect(47px, 9999px, 56px, 0); }
+  70% {
+    clip: rect(62px, 9999px, 87px, 0); }
+  75% {
+    clip: rect(79px, 9999px, 49px, 0); }
+  80% {
+    clip: rect(20px, 9999px, 42px, 0); }
+  85% {
+    clip: rect(18px, 9999px, 84px, 0); }
+  90% {
+    clip: rect(97px, 9999px, 32px, 0); }
+  95% {
+    clip: rect(11px, 9999px, 7px, 0); }
+  100% {
+    clip: rect(85px, 9999px, 87px, 0); } }
+
+@keyframes noise-anim-2 {
+  0% {
+    clip: rect(67px, 9999px, 22px, 0); }
+  5% {
+    clip: rect(74px, 9999px, 28px, 0); }
+  10% {
+    clip: rect(54px, 9999px, 78px, 0); }
+  15% {
+    clip: rect(50px, 9999px, 11px, 0); }
+  20% {
+    clip: rect(56px, 9999px, 10px, 0); }
+  25% {
+    clip: rect(77px, 9999px, 42px, 0); }
+  30% {
+    clip: rect(47px, 9999px, 84px, 0); }
+  35% {
+    clip: rect(50px, 9999px, 24px, 0); }
+  40% {
+    clip: rect(13px, 9999px, 81px, 0); }
+  45% {
+    clip: rect(85px, 9999px, 35px, 0); }
+  50% {
+    clip: rect(15px, 9999px, 25px, 0); }
+  55% {
+    clip: rect(97px, 9999px, 39px, 0); }
+  60% {
+    clip: rect(68px, 9999px, 28px, 0); }
+  65% {
+    clip: rect(47px, 9999px, 56px, 0); }
+  70% {
+    clip: rect(62px, 9999px, 87px, 0); }
+  75% {
+    clip: rect(79px, 9999px, 49px, 0); }
+  80% {
+    clip: rect(20px, 9999px, 42px, 0); }
+  85% {
+    clip: rect(18px, 9999px, 84px, 0); }
+  90% {
+    clip: rect(97px, 9999px, 32px, 0); }
+  95% {
+    clip: rect(11px, 9999px, 7px, 0); }
+  100% {
+    clip: rect(85px, 9999px, 87px, 0); } }
+
+.glitch:before {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-shadow: 1px 0 blue;
+  top: 0;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  -webkit-animation: noise-anim-2 3s infinite linear alternate-reverse;
+          animation: noise-anim-2 3s infinite linear alternate-reverse; }
+
+/* Text Effect Typing
+   ========================================================================== */
+/* Google Fonts */
+/* Animation */
+.anim-typewriter {
+  font-family: 'Anonymous Pro', monospace;
+  position: relative;
+  top: 50%;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
+          animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal; }
+
+.anim-typewriter.line-2 {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s; }
+
+@-webkit-keyframes typewriter {
+  from {
+    width: 0; }
+  to {
+    width: 100%; } }
+
+@keyframes typewriter {
+  from {
+    width: 0; }
+  to {
+    width: 100%; } }
+
+@-webkit-keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75); }
+  to {
+    border-right-color: transparent; } }
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75); }
+  to {
+    border-right-color: transparent; } }
+
+/* Button Effect BTN TWO
+   ========================================================================== */
+/* BTN TWO */
+.btn-two::before, .btn-two::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border: 1px solid transparent; }
+
+.btn-two:hover::after {
+  -webkit-animation-name: rotatecw;
+          animation-name: rotatecw;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s; }
+
+.btn-two:hover::before {
+  -webkit-animation-name: rotateccw;
+          animation-name: rotateccw;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s; }
+
+.btn-two:hover::after, .btn-two:hover::before {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  width: 55px;
+  height: 55px;
+  top: -3px;
+  left: 8px;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear; }
+
+@-webkit-keyframes rotatecw {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@keyframes rotatecw {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@-webkit-keyframes rotateccw {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg); } }
+
+@keyframes rotateccw {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg); } }
+
+/* Button Effect 10
+   ========================================================================== */
+.b10_tveffect div {
+  position: absolute;
+  text-align: center;
+  top: 0px;
+  width: 100%;
+  height: 40px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; }
+
+.b10_tveffect div:nth-child(1) {
+  -webkit-transition: all 0.1s ease;
+  padding: 10px; }
+
+.b10_tveffect div:nth-child(2) {
+  overflow: hidden; }
+
+.b10_tveffect div:nth-child(2) div {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  height: inherit;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; }
+
+.b10_tveffect div:nth-child(2) div:nth-child(1) {
+  color: rgba(200, 120, 120, 0.8);
+  opacity: 0;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAGCAYAAAAL+1RLAAAAF0lEQVQIW2NkwAIYgWKS6OIgQQxAoUoAE4AAUnD/0ugAAAAASUVORK5CYII=) repeat; }
+
+.b10_tveffect div:nth-child(2) div:nth-child(2) {
+  color: rgba(120, 200, 120, 0.8);
+  opacity: 0;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAGCAYAAAAL+1RLAAAAF0lEQVQIW2NkwAIYgWKS6OIgQQxAoUoAE4AAUnD/0ugAAAAASUVORK5CYII=) repeat; }
+
+.b10_tveffect div:nth-child(2) div:nth-child(3) {
+  color: rgba(120, 120, 200, 0.8);
+  opacity: 0;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAGCAYAAAAL+1RLAAAAF0lEQVQIW2NkwAIYgWKS6OIgQQxAoUoAE4AAUnD/0ugAAAAASUVORK5CYII=) repeat; }
+
+.b10_tveffect:hover div:nth-child(1) {
+  color: #ffffff;
+  background-color: black;
+  transition: color 0s ease;
+  -webkit-transition: color 0s ease;
+  transition: background-color 0.3s ease 0.2s;
+  -webkit-transition: background-color 0.3s ease 0.2s;
+  -moz-transition: background-color 0.3s ease 0.2s; }
+
+.b10_tveffect:hover div:nth-child(2) div:nth-child(1) {
+  animation: b10_tveffect_red 0.25s linear;
+  -webkit-animation: b10_tveffect_red 0.25s linear;
+  -moz-animation: b10_tveffect_red 0.25s linear; }
+
+.b10_tveffect:hover div:nth-child(2) div:nth-child(2) {
+  animation: b10_tveffect_green 0.25s linear;
+  -webkit-animation: b10_tveffect_green 0.25s linear;
+  -moz-animation: b10_tveffect_green 0.25s linear; }
+
+.b10_tveffect:hover div:nth-child(2) div:nth-child(3) {
+  animation: b10_tveffect_blue 0.25s linear;
+  -webkit-animation: b10_tveffect_blue 0.25s linear;
+  -moz-animation: b10_tveffect_blue 0.25s linear; }
+
+@-webkit-keyframes b10_tveffect_red {
+  from,
+  to {
+    opacity: 0; }
+  25% {
+    opacity: 1;
+    -webkit-transform: scale(1.8, 1.6) translate(-10px, 3px) skewX(30deg); }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(1.5, 1.2) translate(20px, 6px) skewX(5deg); }
+  75% {
+    opacity: 1;
+    -webkit-transform: scale(0.9, 1.8) translate(-16px, -1px) skewX(-20deg); } }
+
+@-webkit-keyframes b10_tveffect_green {
+  from,
+  to {
+    opacity: 0; }
+  25% {
+    opacity: 1;
+    -webkit-transform: scale(1.3, 1.5) translate(3px, 6px) skewX(25deg); }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(1.6, 1.1) translate(-16px, -5px) skewX(-15deg); }
+  75% {
+    opacity: 1;
+    -webkit-transform: scale(1, 1.8) translate(18px, 4px) skewX(15deg); } }
+
+@-webkit-keyframes b10_tveffect_blue {
+  from,
+  to {
+    opacity: 0; }
+  25% {
+    opacity: 1;
+    -webkit-transform: scale(1.2, 1.4) translate(-10px, -3px) skewX(-25deg); }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(1.9, 1.1) translate(16px, 3px) skewX(5deg); }
+  75% {
+    opacity: 1;
+    -webkit-transform: scale(1.3, 2) translate(-30px, -3px) skewX(20deg); } }

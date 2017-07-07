@@ -42,17 +42,48 @@
         Menu <i class="fa fa-bars"></i>
     </button>
     <div class="container">
-      <a class="navbar-brand" href="#page-top">N8112</a>
+      <a class="navbar-brand" href="#page-top">
+        <div class="btn btn-two">
+          <span>N8112</span>
+        </div>
+      </a>
       <div class="collapse navbar-collapse" id="navbarExample">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#music">Music</a>
+            <a class="nav-link" href="#music">
+              <div class="button_base b10_tveffect">
+                  <div>MUSIC</div>
+                  <div>
+                      <div>MUSIC</div>
+                      <div>MUSIC</div>
+                      <div>MUSIC</div>
+                  </div>
+              </div>
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#video">Video</a>
+            <a class="nav-link" href="#video">
+              <div class="button_base b10_tveffect">
+                  <div>VIDEO</div>
+                  <div>
+                      <div>VIDEO</div>
+                      <div>VIDEO</div>
+                      <div>VIDEO</div>
+                  </div>
+              </div>
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#about">
+              <div class="button_base b10_tveffect">
+                  <div>ABOUT</div>
+                  <div>
+                      <div>ABOUT</div>
+                      <div>ABOUT</div>
+                      <div>ABOUT</div>
+                  </div>
+              </div>
+            </a>
           </li>
         </ul>
       </div>
@@ -64,12 +95,25 @@
     <div class="intro-body">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 offset-md-3">
-            <h1 class="brand-heading">N8112</h1>
-            <p class="intro-text">Music</p>
-              <a href="#music" class="btn btn-circle page-scroll">
-                <i class="fa fa-angle-double-down animated"></i>
-             </a>
+          <div class="col-12">
+            <h1 class="brand-heading">
+              <div class="glitch" data-text="N8112">N8112</div> 
+            </h1>
+            <div class="intro-text">
+              <div class="anim-typewriter-body">
+                <div class="anim-typewriter-wrapper">
+                  <div class="line-1 anim-typewriter">
+                    Home Made Garbage's Side Project
+                  </div>
+                  <div class="line-2 anim-typewriter">
+                    :: Create Music
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#music" class="btn btn-circle page-scroll">
+              <i class="fa fa-angle-double-down animated"></i>
+           </a>
           </div>
         </div>
       </div>
